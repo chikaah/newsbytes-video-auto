@@ -6,7 +6,7 @@ exports.generateNewsVideo = functions.pubsub
   .onRun(async (context) => {
     console.log("Fetching latest news...");
     const response = await axios.get(
-      "https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&language=en"
+      "https://newsdata.io/api/1/news?1953c48ff7ef4f97ac6b41dcc926bc42&language=en"
     );
 
     const topHeadline = response.data.results[0]?.title;
